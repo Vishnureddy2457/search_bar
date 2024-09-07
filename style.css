@@ -1,0 +1,46 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+body{
+    background: linear-gradient(to left, red,gray,gold);
+}
+.container{
+    margin-top: 8vh;
+    width: 100vw;
+    display: flex;
+    justify-content: center;
+}
+.container input{
+    position: relative;
+    border-top-left-radius: 20px;
+    border-bottom-left-radius: 20px;
+}
+.container #search{
+    background-color: #efefef;
+    border: 1px solid;
+    border-top-right-radius: 20px;
+    border-bottom-right-radius: 20px;
+}
+input,#search{
+    padding: 10px;
+}
+input:focus{
+    outline: none;
+
+    padding-left: 7px;
+}
+#icon{
+    position:relative;
+    left:-30vh;
+    top: 1.2vh;
+    z-index: 1;
+    display: none;
+}
+input:focus ~ #icon{
+    display: block;
+}
+input:focus ~ #search{
+    margin-left: -24px;
+}
